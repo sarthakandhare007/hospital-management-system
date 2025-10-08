@@ -1,0 +1,46 @@
+:root {
+  --gradient-start: #6b46c1;
+  --gradient-end: #4f46e5;
+  --card-bg: rgba(255, 255, 255, 0.9);
+}
+
+body.bg-gradient {
+  background: linear-gradient(135deg, #eef2ff 0%, #e9f0ff 30%, #f4ebff 60%, #fef7ff 100%);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  border-radius: 1rem;
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  border: none;
+  border-radius: 0.6rem;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, var(--gradient-end), var(--gradient-start));
+}
+
+textarea, input, select {
+  border-radius: 0.5rem;
+}
+
+#patientAppointments div,
+#doctorAppointments div,
+#allAppointments div {
+  border-bottom: 1px solid #ccc;
+  padding: 6px 0;
+}
